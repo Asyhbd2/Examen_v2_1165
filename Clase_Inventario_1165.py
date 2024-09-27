@@ -4,65 +4,66 @@ print("Angel Tadeo De Leon Ceniceros Matricula: 22308051281165")
 class Inventario1165:
     # Zona de funciones
     # Diccionario CantidadActual
-    def Diccionario_Nombre_Cantidad1165(self):
-        CantidadActual={
-            "Nombre: Huevos":"Cantidad: 30 kg",
-            "Nombre: Betun":"Cantidad: 10",
-            "Nombre: Moldes":"Cantidad: 10",
-            "Nombre: Platos":"Cantidad: 55",
-            "Nombre: Harina":"Cantidad: 15 kg",
-            "Nombre: Leche":"Cantidad: 40 l",
-            "Nombre: Ext.Vanilla":"Cantidad: 10"
+    def Diccionario_Clientes1165(self):
+        Clientes={
+            "Cliente ID:":1423,
+            "Nombre:":"Carlos",
+            "Correo:":"hola@gmail.com",
+            "Telefono:":"656 231 2314",
+            "Direccion:":"Calle piña",
+            "FechaRegistro:":"10/2/24",
+            "Preferencias:":"Cheescake"
         }
-        for x,y in CantidadActual.items():
+        for x,y in Clientes.items():
             print(x,y)
-    # Diccionario InventarioID
-    def Diccionario_ID_Nombre1165(self):
-        InventarioID={
-            "ID: 1":"Nombre: Cupcake Fresa",
-            "ID: 2":"Nombre: Cupcake Vanilla",
-            "ID: 3":"Nombre: Cupcake Chocolate",
-            "ID: 4":"Nombre: CheeseCake",
-            "ID: 5":"Nombre: Tarta de Manzana",
-            "ID: 6":"Nombre: Pastel de Zanahoria",
-            "ID: 7":"Nombre: Pastel de 3 Leches"
+    # Diccionario Productos
+    def Diccionario_Productos1165(self):
+        Productos={
+            "Producto ID:":23,
+            "Nombre:":"Cupcake Vanilla",
+            "Descripcion":"Cupcake sabor Vanilla",
+            "Precio":30,
+            "Categoria":"Cupcakes",
+            "Stock":50,
+            "FechaIngreso":"23/4/23"
         }
-        for x,y in InventarioID.items():
+        for x,y in Productos.items():
             print(x,y)
-    # Diccionario Ubicaciones
-    def Diccionario_Almacen_Ubicacion1165(self):
-        Ubicacion={
-            "Almacen A":"Calle Piña",
-            "Almacen B":"Avenida Raton",
-            "Almacen C":"Avenida Catabum",
-            "Almacen D":"Calle Torres",
-            "Almacen E":"Calle Epicon",
-            "Almacen F":"Avenida Casahouse",
-            "Almacen G":"Avenida Fresa"
+   # Diccionario Proveedores
+    def Diccionario_Proveedores1165(self):
+        Proveedor={
+            "Proveedor ID:":123,
+            "Nombre:":"Carlos",
+            "Correo:":"hola@gmail.com",
+            "Telefono:":"656 231 2314",
+            "Direccion:":"Calle piña",
+            "FechaRegistro:":"10/2/24",
+            "Producto Suministro:":"Cajas"
         }
-        for x,y in Ubicacion.items():
+        for x,y in Proveedor.items():
             print(x,y)
     # Diccionario Notas
-    def Diccionario_Nombre_Notas1165(self):
-        Notas={
-            "Nombre: Cupcake Fresa":"Nota: Buena recepcion",
-            "Nombre: Cupcake Vanilla":"Nota: Le falta sabor",
-            "Nombre: Cupcake Chocolate":"Nota: Buena recepcion",
-            "Nombre: CheeseCake":"Nota: Muy buena recepcion",
-            "Nombre: Tarta de Manzana":"Nota: Falta de compras",
-            "Nombre: Pastel de Zanahoria":"Nota: Falta de compras",
-            "Nombre: Pastel de 3 Leches":"Nota: Muy buena recepcion"
+
+    def Diccionario_Inventario1165(self):
+        Inventario={
+            "Inventario ID:":3,
+            "Producto ID:":42,
+            "Cantidad Inicial:":50,
+            "Cantidad Actual:":23,
+            "Fecha Actualizacion:":"3/3/20",
+            "Ubicacion:":"Calle Torres",
+            "Notas:":"Todo en buen estado"
         }
-        for x,y in Notas.items():
+        for x,y in Inventario.items():
             print(x,y)
 # Zona de creacion del objeto
 ObjetoInventario=Inventario1165()
 # Zona de uso de objetos
-print("Diccionario de IDs:")
-ObjetoInventario.Diccionario_ID_Nombre1165()
-print("Diccionario de Cantidades Actuales:")
-ObjetoInventario.Diccionario_Nombre_Cantidad1165()
-print("Diccionario de Ubicaciones:")
-ObjetoInventario.Diccionario_Almacen_Ubicacion1165()
-print("Diccionario de Notas:")
-ObjetoInventario.Diccionario_Nombre_Notas1165()
+print("Diccionario de Clientes:")
+ObjetoInventario.Diccionario_Clientes1165()
+print("Diccionario de Productos:")
+ObjetoInventario.Diccionario_Productos1165()
+print("Diccionario de Inventario:")
+ObjetoInventario.Diccionario_Inventario1165()
+print("Diccionario de Proveedores:")
+ObjetoInventario.Diccionario_Proveedores1165()
